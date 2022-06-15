@@ -1,0 +1,132 @@
+.container {
+    display: grid; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "header"
+        "body"
+        "footer"; 
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    color: black;
+    text-decoration: none;
+    font-family: "Arial black", 'gadget', sans-serif;
+    word-spacing: 25px;
+    text-transform: uppercase;
+    text-size-adjust: 30px;   
+}
+
+.header:hover {
+    color: #0ca49c;
+}
+
+.body {
+    grid-area: body;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3.5%;
+}
+
+.body h1 {
+    background-color: black;
+    color: white;
+    font-family: 'Poller One', cursive;
+    text-transform: uppercase;
+    padding: 15px 28px 12px;
+    font-size: 35px;
+    display: inline-block;
+}
+
+.body h3 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.38px;
+
+}
+
+.body p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.body img {
+    border: solid black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footer { 
+    grid-area: footer;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-bottom: 2.3%;
+    padding: 36px 0px 42px;
+}
+    
+.footer p { 
+        
+    background-color: #252525;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}   
+    
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+    
+.fa:hover { 
+    opacity: 0.7;
+}
+    
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+    
+.fa-facebook {
+    background: #3B5998;
+    color: white;  
+}
+    
+.fa-google {
+    background: #dd4b39;
+    color: white;       
+}
+    
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+    
+    
+@media(min-width: 992px) {
+    
+.container {  
+    display: grid;
+    gap: 0px 0px;
+    grid-template-areas:
+    "header header header"
+    "body body body"
+    "footer footer footer";
+    }
+}
