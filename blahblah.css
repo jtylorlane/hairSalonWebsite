@@ -1,12 +1,3 @@
-.container {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "body1"
-        "images"
-        "footer"; 
-} 
-
 .header:hover {
     color: #0ca49c;
 }
@@ -19,37 +10,12 @@
     color: black;
     text-decoration: none;
     font-family: "Arial black", 'gadget', sans-serif;
-    word-spacing: 10px;
-    text-transform: uppercase; 
-    font-size: 12px; 
-}
-
-.body1 { 
-    grid-area: body1;
-    background-image: url("the-beacon.jpeg");   
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-   } 
-
-.body1 h2 {
-    background-color: white;
-    color: black;
-    font-family: 'Poller One', cursive;
-    display: inline-block;
-    }
-
-.body1 p { 
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    display: inline-block;
+    word-spacing: 25px;
+    text-transform: uppercase;  
 }
 
 .button { 
-    /* margin-left: 50%; */
+    margin-left: 50%;
     padding: 26px 27px 22px;
     background-color: #0ca49c;
     color: white;
@@ -59,32 +25,63 @@
     font-size: smaller;
     cursor: pointer;
     border: none;
+    
 }
 
 .button:hover { 
     background-color: #1ef1e6;
 }
 
+.body1 p { 
+    margin-left: 50%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.body1 h2 {
+margin-left: 50%;
+background-color: white;
+color: black;
+font-family: 'Poller One', cursive;
+display: inline-block;
+}
+
+.body1 { 
+grid-area: body1;
+background-image: url("the-beacon.jpeg");   
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+text-align: left;
+}
+
 .images {
     grid-area: images;
     display: flex;
-    flex-direction: column;
+    /* column-count: 3;
+    column-gap: 40px; */
 }
   
-.column {
-    /* flex: 33.33%; */
+  .column {
+    flex: 33.33%;
     padding: 34px;
     margin: auto;
 }
 
-.images img {
-    width: 425px;
+.img img {
+    width: 300px;
     height: auto;  
     border: solid black;
+    margin-left: 50px;  
+    /* opacity: 0.7; */
 }
-
 img:hover {
      opacity: 0.7;
+     /* background-color: black; */
 }
 
 .images p {
@@ -99,8 +96,8 @@ justify-content: space-around;
 display: flex;
 background-color: rgb(37, 37, 37);
 color: white;
-margin-bottom: 2.3%;
-padding: 36px 0px 42px;
+/* margin-bottom: 2.3%;
+padding: 36px 0px 42px; */
 }
 
 .footer p { 
@@ -112,15 +109,12 @@ padding: 36px 0px 42px;
     
 }   
 
-/* social media, font awesome (ie, fa) icons */
-
 .fa {
         padding: 20px;
         font-size: 30px;
         width: 30px;
         text-align: center;
         text-decoration: none;
-
 }
 
 .fa:hover { 
@@ -133,7 +127,7 @@ padding: 36px 0px 42px;
     color: white;
     border: solid white;
     width: 10px;
-    height: 7px; 
+    height: 7px;
 }
 
 .fa-facebook {
@@ -158,54 +152,4 @@ padding: 36px 0px 42px;
     border: solid white;
     width: 10px;
     height: 7px;
-    align-self: center;
 }
-
-
-@media(min-width: 576px) {
-    .images {
-        flex-direction: row;
-    }
-
-}
-    
-
-@media (min-width: 992px) {
-    .container {  
-        display: grid;
-        grid-template-areas:
-        "header header header"
-        "body1 body1 body1"
-        "images images images"
-        "footer footer footer";
-    }
-/* add fullscreen rules here */
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
