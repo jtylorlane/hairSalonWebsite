@@ -70,17 +70,11 @@
 }
 
 .images {
+    
     grid-area: images;
     display: flex;
     flex-direction: column;
-}
-  
-.column {
-    flex: 33.33%;
-    padding: 0px;
-    margin: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 0 auto;
 }
 
 .images img {
