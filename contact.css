@@ -30,7 +30,7 @@
     color: #0ca49c;
 }
 
-.letskeepintouch {
+.letskeepintouch h1 {
     background-color: rgb(37, 37,37);
     color: white;
     font-family: 'Poller One', cursive;
@@ -38,6 +38,7 @@
     padding: 10px 68px 10px;
     font-size: 20px;
     text-align: center;
+    margin-top: 5%;
    
 }
 .main {
@@ -93,7 +94,7 @@ input[type=text]  {
     background-color: rgb(37, 37, 37);
     color: white;
     margin-bottom: 2.3%;
-    margin-top: 11%;
+    margin-top: 12%;
     padding: 20px 0px 20px;
 }
     
@@ -156,8 +157,12 @@ input[type=text]  {
 }
 
 
-.letskeepintouch {
+.letskeepintouch h1 {
     font-size: 20px;
+    padding: 7px 7px 7px;
+    display: inline-block;
+    background-color: rgb(37, 37,37);
+    
 }
 
 .main h1 {
@@ -188,7 +193,11 @@ input[type=text]  {
     font-family: "Arial black", 'gadget', sans-serif;
     font-size: 15px;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
+}
+
+.footer {
+    margin-top: 0%;
 }
 
 .footer p { 
