@@ -1,70 +1,79 @@
 .container {
-    display: grid; 
+    display: grid;
+    gap: 1%;
     grid-template-areas: 
-        "header"
-        "main"
-        "footer"; 
+    "header"
+    "main"
+    "footer";
+
 }
 
 .header {
     grid-area: header;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin-bottom: 2%;
-    margin-top: 3%;
+    margin-top: 2%;
     color: black;
     text-decoration: none;
     font-family: "Arial black", 'gadget', sans-serif;
-    word-spacing: 25px;
-    text-transform: uppercase;
-    text-size-adjust: 30px;   
+    text-transform: uppercase; 
+    font-size: 14px;
 }
 
 .header:hover {
     color: #0ca49c;
 }
 
+#logo {
+    width: fit-content;
+    height: fit-content;
+
+}
+
 .main {
-    grid-area: body;
+    grid-area: main;
     text-align: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 3.5%;
+    
 }
 
 .main h1 {
-    background-color: black;
+    background-color: rgb(37, 37,37);
     color: white;
     font-family: 'Poller One', cursive;
     text-transform: uppercase;
-    padding: 15px 28px 12px;
-    font-size: 35px;
+    padding: 10px 68px 10px;
+    font-size: 20px;
     display: inline-block;
+}
+
+.main img {
+    border: solid black;
+    width: 89%;
+    height: auto;
 }
 
 .main h3 {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16.38px;
-
+    text-align: center;
+    margin-top: 8%;
 }
 
 .main p {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin-left: 30%;
-    margin-right: 30%;
+    line-height: 175%;
+    text-align: center;
 }
 
-.body img {
-    border: solid black;
-}
+a {
+    color: black;
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
 
 .footer { 
@@ -74,35 +83,97 @@
     background-color: rgb(37, 37, 37);
     color: white;
     margin-bottom: 2.3%;
-    padding: 36px 0px 42px;
+    padding: 20px 0px 20px;
 }
     
 .footer p { 
         
-    background-color: #252525;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+        background-color: #252525;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
 }   
     
+    /* social media, font awesome (ie, fa) icons */
+    
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+        height: auto; 
+        color: white;
+        background-color: rgb(37, 37, 37);
+        border: solid white;
 }
     
+    .fa:hover { 
+        background-color: white;
+        color: black;
+        border: solid black    
+}
 
-    
+@media(min-width: 576px) {
+
+}
+
+
+
+
+
+
+
+
+
+
 @media(min-width: 992px) {
+    .container {  
+        display: grid;
+        gap: 0%;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+/* add fullscreen rules here */
+
+.header {
+    margin: 35px 20px 40px;
+}
+.main {
+margin-bottom: 5%;;
+
+}
+.main h1 {
+    margin-top: 0%;
+    padding: 15px 28px 12px;
+    font-size: 20px;
+    font-size: 35px;
+}
+
+.main img {
+
+    width: 620px;
+    height: 299px;
+}
+
+.main h3 {
+    font-size: 16.38px;
+    margin-top: 2%;
     
-.container {  
-    display: grid;
-    gap: 0px 0px;
-    grid-template-areas:
-    "header header header"
-    "body body body"
-    "footer footer footer";
-    }
+}
+
+.main p {
+    font-size: 14px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.footer p { 
+    font-size: 14px;
+}   
+
+.fa {
+        padding: 30px;
+}
 }
