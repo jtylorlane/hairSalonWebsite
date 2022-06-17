@@ -1,0 +1,161 @@
+.container {
+    display: grid;
+    gap: 1%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+
+.header {
+    grid-area: header;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+    font-family: "Arial black", 'gadget', sans-serif;
+    text-transform: uppercase; 
+    font-size: 14px;
+}
+
+.header:hover {
+    color: #0ca49c;
+}
+
+#logo {
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.main {
+    text-align: center;
+    color: black;
+
+
+}
+
+.blog {
+    font-family: 'Poller One', cursive;
+    font-size: 10px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+    padding: 1px 0px 1px;
+    display: block;
+   
+    
+}
+
+.main h1 {
+font-family: "Arial black", 'gadget', sans-serif;
+
+}
+
+.main p {
+font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.button {
+color: white;
+background-color: black;
+padding: 7px 30px 7px;
+font-size: 17px;
+font-weight: 900;
+cursor: pointer;
+border: none;
+}
+
+.button:hover {
+background-color: white;
+color: black;
+border: solid black;
+
+
+
+}
+
+.footer { 
+    grid-area: footer;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-bottom: 2.3%;
+    padding: 20px 0px 20px;
+}
+    
+.footer p { 
+        
+    background-color: #252525;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}   
+    
+/* social media, font awesome (ie, fa) icons */
+    
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    height: auto; 
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border: solid white;
+}
+    
+.fa:hover { 
+    background-color: white;
+    color: black;
+    border: solid black    
+}
+
+@media(min-width: 576px) {
+
+}
+
+
+
+
+
+
+
+
+@media(min-width: 992px) {
+    .container {  
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+/* add fullscreen rules here */
+
+.header {
+    margin: 35px 20px 40px;
+}
+.main {
+margin-bottom: 5%;
+
+}
+.blog {
+    text-transform: uppercase;
+    padding: 0px 20px 0px;
+    font-size: 18px;
+    display: inline-block;;
+}
+
+.footer p { 
+    font-size: 14px;
+}   
+
+.fa {
+        padding: 30px;
+}
+}
