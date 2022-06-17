@@ -10,7 +10,6 @@
         "stache7 stache8"
         "stache9 ."
         "footer footer";
-
 }
 
 .header {
@@ -28,12 +27,6 @@
 
 .header:hover {
     color: #0ca49c;
-}
-
-#logo {
-    width: fit-content;
-    height: fit-content;
-
 }
 
 .gallery {
@@ -141,16 +134,27 @@ opacity: 1;
 font-size: 35px;
 display: inline-block;
 text-align: center;
-margin-top: 2%;
+margin-top: 0%;
 padding: 10px 28px 10px;
-margin-bottom: 1.7%;
+margin-bottom: 2%;
+}
 
+.gallery-container {
+    width: 100vw;
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    margin-left: -12px;
 }
 
 .main { 
     max-width: 50%;
+    justify-content: center;
     }
 
+.stache {
+padding: 15px;
+}
 
 .footer p { 
     font-size: 14px;
