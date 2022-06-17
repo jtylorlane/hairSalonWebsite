@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
     <title>Go Live</title>
@@ -23,37 +23,38 @@
     </nav>
 </div>
 
-    <h1>LET'S KEEP IN TOUCH</h1>
+<div class="main">
+    <h1 class="letskeepintouch">LET'S KEEP IN TOUCH</h1>
 
-    <div>
-        <form action="contact.html">
-             <input type="text" name="fname" id="fname" value="name">
-             <input type="text" name="address" id="address" value="address">
-             <input type="text" name="email" id="email" value="email">
-             <input type="text" name="phone" id="phone" value="phone number">
-             <textarea name="message" id="message">message</textarea>
-             <input type="submit" name="send" id="send" value="send">
-        </form>
+        <div>
+            <form action="contact.html">
+                 
+                <input type="text" name="name" class="name" value="name">
+                
+                <input type="text" name="address" class="address" value="address">
+                
+                <input type="text" name="email" class="email" value="email">
+                
+                <input type="text" name="phone" class="phone" value="phone number">
+                 
+                <input type="text" name="message" class="message" id="mess" value="message">
+                
+                <button type="button" class="button" href="./contact.html">Send</button>
+            </form>
+    </div>
 </div>
 
-<div id="footer">
-    <div>
-        <p>© 2023 by Mustacchio. All rights reserved.</p>
-            <ul>
-                <li>
-                    <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
-                </li>
-                <li>
-                    <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
-                </li>
-                <li>
-                    <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
-                </li>
-                <li>
-                    <a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
-                </li>
-            </ul>
-    </div>
-    
+<div class="footer">
+    <p>© 2023 by Mustacchio. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.google.com/" class="fa fa-google"></a>
+            <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+        </div>
+</div>
+
+</div>
+
 </body>
-</html>
+</html> 

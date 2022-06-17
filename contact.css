@@ -1,0 +1,175 @@
+.main {
+    display: grid;
+    gap: 1%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "name"
+    "address"
+    "email"
+    "phone"
+    "message"
+    "send"
+    "footer";
+}
+
+.header {
+    grid-area: header;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+    font-family: "Arial black", 'gadget', sans-serif;
+    text-transform: uppercase; 
+    font-size: 14px;
+}
+
+.header:hover {
+    color: #0ca49c;
+}
+
+.letskeepintouch {
+    background-color: rgb(37, 37,37);
+    color: white;
+    font-family: 'Poller One', cursive;
+    text-transform: uppercase;
+    padding: 10px 68px 10px;
+    font-size: 20px;
+   
+}
+.main {
+   grid-area: main;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 14px;
+}
+
+input[type=text]  {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: solid black;
+  }
+
+  #mess {
+    width: 95%;
+    height: 60px;
+    padding: 80px 80px;  
+    text-align: center;
+  }
+
+  .button {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    padding: 12px 12px 12px;
+    font-family: "Arial black", 'gadget', sans-serif;
+    font-size: 15px;
+    margin-top: 3.5%;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+    .button:hover {
+        color: rgb(37, 37, 37);;
+        background-color: white;
+        border: solid black;
+        border-width: 2px;;
+    }
+
+
+  .footer { 
+    grid-area: footer;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-bottom: 2.3%;
+    margin-top: 11%;
+    padding: 20px 0px 20px;
+}
+    
+.footer p { 
+        
+        background-color: #252525;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+}   
+    
+    /* social media, font awesome (ie, fa) icons */
+    
+.fa {
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+        height: auto; 
+        color: white;
+        background-color: rgb(37, 37, 37);
+        border: solid white;
+}
+    
+    .fa:hover { 
+        background-color: white;
+        color: black;
+        border: solid black    
+}
+
+@media(min-width: 576px) {
+
+}
+
+
+
+
+
+
+
+@media(min-width: 992px) {
+    .container {  
+        display: grid;
+        gap: 1%;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "name name"
+        "address address"
+        "email email"
+        "phone phone"
+        "message message"
+        "send send"
+        "footer footer";
+}
+/* add fullscreen rules here */
+
+.header {
+    margin: 35px 20px 40px;
+}
+.main {
+margin-bottom: 5%;;
+
+}
+.main h1 {
+    margin-top: 0%;
+    padding: 15px 28px 12px;
+    font-size: 20px;
+    font-size: 35px;
+}
+
+.footer p { 
+    font-size: 14px;
+}   
+
+.fa {
+        padding: 30px;
+}
+}
